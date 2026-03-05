@@ -1,0 +1,18 @@
+# Python
+.venv/
+venv/
+ai-service/venv/
+__pycache__/
+
+# Node
+node_modules/
+
+# Next
+.next/
+
+# env
+.env
+.env.local
+
+# VSCode
+.vscode/

@@ -1,0 +1,3 @@
+<video controls className="rounded-xl">
+  <source src="/videos/ventura-story.mp4" type="video/mp4" />
+</video>

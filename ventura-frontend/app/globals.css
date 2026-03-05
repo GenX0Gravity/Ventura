@@ -1,0 +1,81 @@
+@import "tailwindcss";
+
+/* ============================= */
+/* 🎨 ROOT COLOR SYSTEM */
+/* ============================= */
+
+:root {
+  --primary-bg: #0a0f2c;
+  --accent-gold: #f5b942;
+  --accent-green: #00c896;
+  --soft-white: #f8f9fa;
+  --foreground: #ffffff;
+}
+
+/* ============================= */
+/* 🌙 DARK MODE SUPPORT */
+/* ============================= */
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primary-bg: #0a0f2c;
+    --foreground: #ffffff;
+  }
+}
+
+/* ============================= */
+/* 🌐 GLOBAL BODY STYLING */
+/* ============================= */
+
+body {
+  background-color: var(--primary-bg);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+  transition:
+    background 0.3s ease,
+    color 0.3s ease;
+}
+
+/* ============================= */
+/* ✨ GLOW BUTTON STYLE */
+/* ============================= */
+
+.glow-btn {
+  background: var(--accent-gold);
+  color: black;
+  box-shadow: 0 0 20px var(--accent-gold);
+  transition: all 0.3s ease-in-out;
+}
+
+.glow-btn:hover {
+  box-shadow: 0 0 40px var(--accent-gold);
+  transform: translateY(-2px);
+}
+
+/* ============================= */
+/* 🧊 GLASSMORPHISM CARD */
+/* ============================= */
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 0 0 20px rgba(245, 185, 66, 0.2);
+}
+
+/* ============================= */
+/* 🌟 SMOOTH TRANSITIONS */
+/* ============================= */
+
+* {
+  transition: all 0.2s ease-in-out;
+}
+
+/* ============================= */
+/* 🐾 SCROLL BEHAVIOR */
+/* ============================= */
+
+html {
+  scroll-behavior: smooth;
+}
